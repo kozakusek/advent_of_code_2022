@@ -27,6 +27,7 @@ p = "/src/main/scala"
 
 open(dirname + p + "/First" + EXT, "x")
 open(dirname + p + "/Second" + EXT, "x")
+os.remove(dirname + p + "/Main.scala")
 os.remove(dirname + "/README.md")
 with open(dirname + "/README.md", "x") as f:
     f.write(f"# Day-{day}  \n")
