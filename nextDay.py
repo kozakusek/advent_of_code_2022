@@ -1,4 +1,5 @@
 import os
+import shutil
 import subprocess
 
 EXT = ".scala"
@@ -29,6 +30,7 @@ open(dirname + p + "/First" + EXT, "x")
 open(dirname + p + "/Second" + EXT, "x")
 os.remove(dirname + p + "/Main.scala")
 os.remove(dirname + "/README.md")
+shutil.rmtree(dirname + "/src/test/")
 with open(dirname + "/README.md", "x") as f:
     f.write(f"# Day-{day}  \n")
     f.write(f"## [Link]({URL}/{YEAR}/day/{day})  \n")
