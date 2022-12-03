@@ -35,5 +35,4 @@ with open(dirname + "/README.md", "x") as f:
     f.write(f"# Day-{day}  \n")
     f.write(f"## [Link]({URL}/{YEAR}/day/{day})  \n")
 
-open(dirname + "/input-1.txt", "x")
-open(dirname + "/input-2.txt", "x")
+open(dirname + "/input.txt", "x")
