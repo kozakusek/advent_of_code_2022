@@ -33,3 +33,4 @@ with open(dirname + "/README.md", "x") as f:
     f.write(f"## [Link]({URL}/{YEAR}/day/{day})  \n")
 
 open(dirname + "/input.txt", "x")
+open(dirname + "/test.txt", "x")
