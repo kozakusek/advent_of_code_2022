@@ -20,7 +20,7 @@ for file in os.listdir():
     if os.path.isdir(file) and is_day(file):
        day = max(day, get_day_number(file) + 1)
 
-dirname = f"day-{day}"
+dirname = f"day-{day:02d}"
 
 subprocess.run(["sbt", "new", "scala/scala3.g8"], input=dirname.encode(), capture_output=True)
 
